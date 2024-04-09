@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/dropdownlogin.css">
+    <title>Payroll Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--icons of home/contact-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--icons of username/password-->
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-address-book"></i> Contact</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form id="login-form" action='/dropdown_login.html' method="POST">
+                    <label for="login_as"><b>Login As : </b></label>
+                    <select class="form-select" id="usertype" name="login_as">
+                        <option value="admin">Admin</option>
+                        <option value="employee">Employee</option>
+                    </select>
+
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'
+                    required>
+
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" required class="form-control"
+                        aria-describedby="passwordHelpBlock">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+                        spaces, special characters, or emoji.
+                    </div>
+
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    <button class="btn btn-outline-dark" type="submit" id="loginButton">Login</button>
+                </form>
+            </div>
+            <div class="info-section">
+                <img src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2023/04/28004103/Automated-Payroll-System-vs-Manual-Payroll-System-Detailed-Comparison-2023.png"
+                    alt="Your Image">
+                <p>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui itaque accusamus rem velit
+                    mollitia placeat quaerat libero reiciendis eum. Nisi, suscipit. Alias corrupti dolorum neque numquam
+                    hic quasi, quis ut molestiae consequatur cupiditate consequuntur quod accusamus accusantium rem
+                    optio dicta omnis! Hic, sequi asperiores.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="margin: 15px;">&copy; 2023 Payroll Management System</p>
+    </footer>
+</body>
+
+</html>

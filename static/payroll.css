@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,800;1,500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: rgb(31, 114, 114);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select[name="month"],
+textarea {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0px 90px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.10);
+}

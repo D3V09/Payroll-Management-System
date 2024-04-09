@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,800;1,500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #A89F91;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0 ;
+}
+
+.button {
+    background-color: #91a8a4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.imgcontainer{
+    margin-top: 0;
+    background-image: url("./concept-paie-vue-dessus-articles_23-2149103952.jpg");
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 50px; */
+    flex-direction: column;
+    margin: 0;
+}
+.button-store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,131 @@
+
+    /* Reset some default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Apply styles to the body */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Style the header and navigation */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav {
+        display: inline-grid;
+        justify-content: center;
+        padding: 19px 25px;
+    }
+
+
+    .nav-links li {
+        list-style-type: none;
+        margin: 0 100px;
+        display: inline-flex;
+        float: right;
+    }
+
+    .login-form {
+        padding: 60px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: larger;
+        padding: 0px 0px;
+        display: inline-flex;
+    }
+
+    /* Style the login section */
+    .login {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .login-form {
+        margin: 20px;
+        background: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        width: 50%;
+    }
+
+    .login-form h2 {
+        text-align: center;
+        padding: 30px 0px;
+        font-weight: bold;
+    }
+
+    .login-form {
+        padding: 60px;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .forgot-password {
+        display: block;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    button {
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    /* Style the information section */
+    .info-section {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .info-section img {
+        max-width: 100%;
+    }
+
+    /* Style the footer */
+    footer {
+        text-align: center;
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    .nav-links{
+        list-style-type: none;
+        margin-bottom: 0;
+    }
+
+    i{
+        margin: 5px;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }

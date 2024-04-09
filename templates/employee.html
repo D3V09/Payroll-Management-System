@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: rgb(31, 114, 114);
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(26, 25, 25, 0.1);
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zigsaw.in%2Fjobs%2Fhow-to-make-salary-slip-with-sample-formats%2F&psig=AOvVaw01K34JM7VWfOgSqEV-dxy5&ust=1696141817531000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNjf-_Ta0YEDFQAAAAAdAAAAABAE');
+        }
+
+        .form-group {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        select[name="department"],
+        input[type="date"],
+        textarea {
+            width: 93%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.10);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Employee Information Form</h1>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id='nameInput'
+                    onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'
+                    required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="id">Employee ID:</label><br>
+                <input type="number" id="id" name="id" onkeypress='return ((event.charCode >= 48 && event.charCode <= 57)||(event.charCode == 32))' required>
+            </div> -->
+
+            <div class="form-group">
+                <label for="name">Post:</label>
+                <input type="text" id='postInput'
+                    onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="DOJ">Date of Joining:</label>
+                <input type="date" id="DOJ" name="DOJ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="E_salary">Basic Salary:</label>
+                <input type="number" id="E_salary" name="E_salary"
+                    onkeypress='return ((event.charCode >= 48 && event.charCode <= 57)||(event.charCode == 32))'
+                    required>
+            </div>
+            <!-- salary validation -ve -->
+            <div class="form-group">
+                <label for="grossSalary">Gross Salary:</label>
+                <input type="number" id="grossSalary" name="grossSalary"
+                    onkeypress='return ((event.charCode >= 48 && event.charCode <= 57)||(event.charCode == 32))'
+                    required>
+            </div>
+            <h4>Address :</h4>
+            <div>
+                <textarea id="address" name="address" placeholder="Please Enter City and Postal code" rows="3"
+                    required></textarea>
+            </div>
+
+            <button style="margin-top: 10px;" id="newid" type="button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        var e_id = 3001;
+        function validateLogin() {
+            var nameInput = document.getElementById('nameInput').value;
+            var postInput = document.getElementById('postInput').value;
+            var DOJ = document.getElementById('DOJ').value;
+            var E_salary = document.getElementById('E_salary').value;
+            var grossSalary = document.getElementById('grossSalary').value;
+            var address = document.getElementById('address').value;
+
+            if (nameInput === '' || postInput==='' || DOJ==='' ||E_salary==='' || grossSalary === '' || address==='') {
+                alert("Please fill the fileds!!!");
+            }
+            else {
+                alert("New Id Created Successfully!!!");
+                alert("Your new ID is " + e_id);
+                e_id++;
+                window.location.href = 'dept.html';
+            }
+        }
+        document.getElementById('newid').addEventListener('click', validateLogin);
+    </script>
+</body>
+
+</html>
